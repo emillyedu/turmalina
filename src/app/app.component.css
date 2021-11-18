@@ -1,0 +1,106 @@
+:host {
+    --space: 2rem;
+    --space-xs: calc(var(--space) / 3);
+    --space-sm: calc(var(--space) / 2);
+    --space-md: calc(var(--space) * 2);
+  
+    --color-primary: lightgray;
+    --color-accent: whitesmoke;
+    --color-dark: black;
+    --color-mid: gray;
+    --color-light: white;
+    --color-highlight: dodgerblue;
+    --color-dark-red: rgb(87, 2, 2);
+  
+    --radius: 0.125rem;
+
+    --font-family: "Montserrat", sans-serif; 
+  }
+  
+* {
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-primary) var(--color-mid);
+}
+
+/* Chrome and Edge */
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--color-primary);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #757474;
+    border-radius: 20px;
+
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: var(--font-family) !important;
+    line-height: 1.4;
+}
+
+    /*************************/
+   /*   Navegation Header   */
+  /*************************/
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+    color: black;
+    text-decoration:none; 
+}
+
+a:hover{
+    color: rgb(30, 134, 160) !important;
+}
+
+.navbar{
+    z-index: 1000;
+    width: 100%;
+    padding-left: var(--space);
+    padding-right: var(--space);
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2); 
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    justify-content: left!important;
+}
+
+.navbar-documentation{
+    margin-bottom: 1.5rem;
+}
+
+.navbar-toggler-icon{
+    margin-right: 15px;
+}
+
+.navbar-brand:not(:last-child){
+    padding-right: 2rem;
+}
+
+/* @media screen and (min-width: 2500px){
+    body{
+        margin: 0 15vw!important;
+    }
+} */
+
+@media screen and (min-width: 729px){
+    .navbar-toggler-icon{
+        display: none!important;
+    }
+}
+
+
+
+
